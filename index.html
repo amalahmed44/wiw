@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rachel &amp; Daniel — Wedding Invitation | August 17, 2027</title>
+
+  <!-- Google Fonts: Great Vibes, Cormorant Garamond, Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              DEFAULT: '#1B2A4A',
+              deep: '#10192E',
+              mid: '#16233E',
+              light: '#273B66',
+            },
+            wash: {
+              light: '#F4F8FB',
+              DEFAULT: '#EBF2F7',
+              mid: '#DCE6F0',
+            },
+            slateink: '#2C3E50',
+            silver: {
+              light: '#E8EEF5',
+              DEFAULT: '#C2CDD9',
+              metallic: '#8FA0B5',
+            }
+          },
+          fontFamily: {
+            script: ['"Great Vibes"', 'cursive'],
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Montserrat"', 'sans-serif'],
+          },
+          boxShadow: {
+            'editorial': '0 20px 50px -15px rgba(27, 42, 74, 0.10)',
+            'envelope': '0 32px 70px -12px rgba(7, 13, 26, 0.72), 0 8px 24px -4px rgba(7, 13, 26, 0.45)',
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: #2C3E50;
+      background-color: #FFFFFF;
+      overflow-x: hidden;
+    }
+
+    /* Watercolor Wash Background Effect */
+    .watercolor-wash {
+      background:
+        radial-gradient(circle at 20% 25%, rgba(220, 230, 240, 0.85) 0%, rgba(235, 242, 247, 0.45) 45%, transparent 75%),
+        radial-gradient(circle at 80% 70%, rgba(210, 224, 238, 0.75) 0%, rgba(235, 242, 247, 0.35) 50%, transparent 80%),
+        linear-gradient(180deg, #F7FAFC 0%, #EBF2F7 50%, #FFFFFF 100%);
+    }
+
+    .watercolor-card-wash {
+      background:
+        radial-gradient(ellipse at top, rgba(220, 230, 240, 0.75) 0%, rgba(235, 242, 247, 0.35) 60%, rgba(255, 255, 255, 0.95) 100%);
+    }
+
+    /* Moody Photographic White-Floral & Botanical Garden Backdrop */
+    .floral-garden-hero {
+      background-color: #10192E;
+      background-image:
+        radial-gradient(circle at 50% 44%, rgba(16, 25, 46, 0.32) 0%, rgba(12, 20, 38, 0.78) 100%),
+        linear-gradient(180deg, rgba(244, 248, 251, 0.78) 0%, rgba(16, 25, 46, 0.45) 36%, rgba(12, 19, 36, 0.84) 100%),
+        url('photo1.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Soft Translucent Silk Organza Curtain Vignette on Sides */
+    .organza-left {
+      background: linear-gradient(100deg,
+        rgba(248, 250, 252, 0.55) 0%,
+        rgba(235, 242, 247, 0.24) 38%,
+        rgba(255, 255, 255, 0) 100%);
+      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(3px);
+      mask-image: linear-gradient(to right, black 25%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to right, black 25%, transparent 100%);
+    }
+
+    .organza-right {
+      background: linear-gradient(260deg,
+        rgba(248, 250, 252, 0.55) 0%,
+        rgba(235, 242, 247, 0.24) 38%,
+        rgba(255, 255, 255, 0) 100%);
+      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(3px);
+      mask-image: linear-gradient(to left, black 25%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to left, black 25%, transparent 100%);
+    }
+
+    /* Realistic Heavyweight Matte Cotton-Velvet Dark Navy Paper Grain */
+    .navy-cotton-paper {
+      background-color: #1B2A4A;
+      background-image:
+        radial-gradient(ellipse at 50% 0%, rgba(255, 255, 255, 0.08) 0%, transparent 65%),
+        radial-gradient(ellipse at 50% 100%, rgba(7, 12, 24, 0.65) 0%, transparent 75%);
+    }
+
+    /* Realistic Wax Seal Lighting */
+    .wax-seal-realistic {
+      background: radial-gradient(circle at 34% 28%,
+        #F2F5F9 0%,
+        #D5DEE8 28%,
+        #9AA8B8 64%,
+        #6C7C90 90%,
+        #536275 100%);
+      box-shadow:
+        0 10px 22px rgba(7, 13, 26, 0.65),
+        0 2px 5px rgba(7, 13, 26, 0.45),
+        inset 0 2px 3px rgba(255, 255, 255, 0.85),
+        inset 0 -3px 6px rgba(20, 32, 56, 0.55);
+    }
+
+    .wax-seal-inner-ring {
+      box-shadow:
+        inset 0 2px 4px rgba(20, 32, 56, 0.45),
+        0 1px 1px rgba(255, 255, 255, 0.75);
+    }
+
+    /* Envelope Opening Physics */
+    #envelope-overlay {
+      transition: opacity 1.15s cubic-bezier(0.22, 1, 0.36, 1), transform 1.15s cubic-bezier(0.22, 1, 0.36, 1), visibility 1.15s;
+    }
+    #envelope-overlay.opened {
+      opacity: 0;
+      transform: scale(1.03);
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .envelope-flap-3d {
+      transform-origin: 50% 0%;
+      transition: transform 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+      transform-style: preserve-3d;
+    }
+    #envelope-overlay.opening .envelope-flap-3d {
+      transform: rotateX(180deg);
+    }
+
+    .seal-release {
+      transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.5s ease;
+    }
+    #envelope-overlay.opening .seal-release {
+      transform: translate(-50%, -50%) scale(0.85);
+      opacity: 0;
+    }
+
+    /* Scroll Reveal Animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Rotating Circular Stamp */
+    @keyframes spinSlow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .spin-slow {
+      animation: spinSlow 28s linear infinite;
+    }
+
+    /* Subtle Audio Equalizer Bars */
+    @keyframes eqPulse {
+      0%, 100% { transform: scaleY(0.35); }
+      50% { transform: scaleY(1); }
+    }
+    .eq-bar {
+      transform-origin: bottom;
+      transform: scaleY(0.35);
+      transition: transform 0.2s ease;
+    }
+    .playing .eq-bar-1 { animation: eqPulse 0.9s ease-in-out infinite; }
+    .playing .eq-bar-2 { animation: eqPulse 0.7s ease-in-out 0.2s infinite; }
+    .playing .eq-bar-3 { animation: eqPulse 1.0s ease-in-out 0.4s infinite; }
+    .playing .eq-bar-4 { animation: eqPulse 0.8s ease-in-out 0.15s infinite; }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F4F8FB;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #B8C4D4;
+      border-radius: 9999px;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-navy selection:text-white">
+
+  <!-- Wedding Song Audio Element -->
+  <audio id="wedding-song" src="young-and-beautiful.mp3" preload="auto" loop></audio>
+
+  <!-- ===================================================================== -->
+  <!-- A. HERO SECTION / REALISTIC NAVY ENVELOPE & FLORAL GARDEN INTRO       -->
+  <!-- ===================================================================== -->
+  <section id="envelope-overlay" aria-label="Wedding Envelope Invitation"
+    class="fixed inset-0 z-50 flex flex-col items-center justify-center floral-garden-hero px-4 py-8 overflow-y-auto">
+
+    <!-- Subtle Sheer Organza Side Drapes -->
+    <div class="organza-left fixed inset-y-0 left-0 w-24 sm:w-52 pointer-events-none"></div>
+    <div class="organza-right fixed inset-y-0 right-0 w-24 sm:w-52 pointer-events-none"></div>
+
+    <!-- Centered Luxury Stationery Composition -->
+    <div class="relative z-10 w-full max-w-[500px] mx-auto flex flex-col items-center text-center my-auto">
+
+      <!-- Editorial Header Above Envelope -->
+      <div class="mb-5 sm:mb-6 select-none">
+        <p class="font-sans text-[10px] sm:text-[11px] uppercase tracking-[0.36em] text-navy font-semibold mb-1.5">
+          You&rsquo;ve Got Mail From
+        </p>
+        <h1 class="font-script text-5xl sm:text-[64px] text-navy-deep leading-none drop-shadow-[0_2px_14px_rgba(255,255,255,0.85)]">
+          Rachel <span class="text-4xl sm:text-5xl font-normal">&amp;</span> Daniel
+        </h1>
+      </div>
+
+      <!-- Realistic Deep Navy Cotton-Paper Envelope -->
+      <div id="envelope-trigger" role="button" tabindex="0" aria-label="Tap to open wedding invitation envelope"
+        class="group relative w-full aspect-[1.54/1] max-w-[480px] navy-cotton-paper rounded-[4px] shadow-envelope cursor-pointer transition-transform duration-500 hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-silver/70"
+        style="perspective: 1400px;">
+
+        <!-- Subtle Realistic Paper Fiber Grain Overlay -->
+        <div class="absolute inset-0 rounded-[4px] pointer-events-none opacity-45 mix-blend-overlay"
+             style="background-image: radial-gradient(rgba(255,255,255,0.14) 0.5px, transparent 0.5px); background-size: 4px 4px;"></div>
+
+        <!-- Crisp Envelope Pocket Folds & Realistic Ambient Occlusion Shadows -->
+        <svg class="absolute inset-0 w-full h-full rounded-[4px] pointer-events-none" viewBox="0 0 500 325" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="leftWingGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#1E2F52" />
+              <stop offset="100%" stop-color="#16233E" />
+            </linearGradient>
+            <linearGradient id="rightWingGrad" x1="1" y1="0" x2="0" y2="0">
+              <stop offset="0%" stop-color="#1E2F52" />
+              <stop offset="100%" stop-color="#16233E" />
+            </linearGradient>
+            <linearGradient id="bottomPocketGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#223459" />
+              <stop offset="18%" stop-color="#1B2A4A" />
+              <stop offset="100%" stop-color="#131F38" />
+            </linearGradient>
+            <filter id="creaseBlur" x="-10%" y="-10%" width="120%" height="120%">
+              <feGaussianBlur stdDeviation="2.2" />
+            </filter>
+          </defs>
+
+          <rect x="0" y="0" width="500" height="325" fill="#121D35" />
+          <polygon points="0,0 235,168 0,325" fill="url(#leftWingGrad)" />
+          <polygon points="500,0 265,168 500,325" fill="url(#rightWingGrad)" />
+          <polygon points="0,325 215,156 285,156 500,325" fill="#09101F" opacity="0.55" filter="url(#creaseBlur)" />
+          <polygon points="0,325 218,160 282,160 500,325" fill="url(#bottomPocketGrad)" />
+          <polyline points="0,325 218,160 282,160 500,325" fill="none" stroke="#364E7D" stroke-width="0.9" opacity="0.7" />
+        </svg>
+
+        <!-- Realistic Curved Euro-Flap Top Closure -->
+        <svg class="envelope-flap-3d absolute inset-0 w-full h-full rounded-t-[4px] pointer-events-none z-10" viewBox="0 0 500 325" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="navyTopFlap" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#24375E" />
+              <stop offset="55%" stop-color="#1B2A4A" />
+              <stop offset="100%" stop-color="#15223D" />
+            </linearGradient>
+            <filter id="realisticFlapShadow" x="-10%" y="-10%" width="120%" height="135%">
+              <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#070D1A" flood-opacity="0.62" />
+            </filter>
+          </defs>
+
+          <path d="M 0,0
+                   L 500,0
+                   L 500,12
+                   C 482,66 432,88 372,110
+                   C 318,130 286,192 250,192
+                   C 214,192 182,130 128,110
+                   C 68,88 18,66 0,12
+                   Z"
+                fill="url(#navyTopFlap)"
+                filter="url(#realisticFlapShadow)" />
+
+          <line x1="0" y1="0.75" x2="500" y2="0.75" stroke="#425C8F" stroke-width="1.2" opacity="0.65" />
+          <path d="M 1,12
+                   C 19,65 68,87 128,109
+                   C 182,129 214,191 250,191
+                   C 286,191 318,129 372,109
+                   C 432,87 481,65 499,12"
+                fill="none"
+                stroke="#395282"
+                stroke-width="0.9"
+                opacity="0.75" />
+        </svg>
+
+        <!-- Realistic Metallic Silver Wax Seal -->
+        <div class="seal-release absolute left-1/2 top-[56%] -translate-x-1/2 -translate-y-1/2 z-20 w-[76px] h-[76px] sm:w-[86px] sm:h-[86px] flex items-center justify-center transition-transform duration-500 group-hover:scale-105">
+          <div class="w-full h-full wax-seal-realistic flex items-center justify-center p-2"
+               style="border-radius: 51% 49% 52% 48% / 48% 51% 49% 52%;">
+            <div class="w-full h-full rounded-full wax-seal-inner-ring border border-navy/25 flex flex-col items-center justify-center bg-gradient-to-br from-silver-light/30 to-navy/10">
+              <span class="font-serif italic text-navy-deep text-xl sm:text-2xl font-semibold tracking-wider leading-none drop-shadow-[0_1px_0_rgba(255,255,255,0.75)]">
+                R&amp;D
+              </span>
+              <span class="text-[7px] uppercase tracking-[0.26em] text-navy-deep/75 mt-1 font-semibold">
+                17.08.27
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Subtle Minimalist Prompt Below Envelope -->
+      <button id="open-invitation-btn" type="button"
+        class="mt-6 sm:mt-7 inline-flex flex-col items-center group focus:outline-none">
+        <span class="font-sans text-[11px] sm:text-xs uppercase tracking-[0.38em] text-white/95 font-medium drop-shadow-[0_2px_8px_rgba(7,13,26,0.9)] group-hover:tracking-[0.44em] transition-all duration-300">
+          Tap To Open
+        </span>
+        <span class="w-8 h-[1px] bg-silver/70 mt-2.5 transition-all duration-300 group-hover:w-14 group-hover:bg-white"></span>
+      </button>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- MAIN INVITATION SUITE (EDITORIAL CONTAINER)                           -->
+  <!-- ===================================================================== -->
+  <main id="main-invitation" class="min-h-screen watercolor-wash pb-20">
+
+    <!-- Subtle Top Bar Navigation -->
+    <header class="sticky top-0 z-30 bg-white/85 backdrop-blur-md border-b border-wash-mid/80">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
+        <a href="#top" class="font-serif italic text-xl text-navy font-medium tracking-wide">
+          R <span class="text-silver-metallic text-base">&amp;</span> D
+        </a>
+      
+      </div>
+    </header>
+
+    <!-- Editorial Single-Column Luxury Suite Wrapper -->
+    <div id="top" class="max-w-2xl mx-auto px-4 sm:px-6 pt-8 sm:pt-12 space-y-12 sm:space-y-16">
+
+      <!-- ================================================================= -->
+      <!-- B. MAIN INVITATION CARD & AUDIO PLAYER                            -->
+      <!-- ================================================================= -->
+      <section id="invitation" class="reveal relative bg-white rounded-3xl shadow-editorial border border-wash-mid overflow-hidden">
+        <!-- Soft Watercolor Top Wash Backdrop -->
+        <div class="watercolor-card-wash pt-10 pb-8 px-6 sm:px-12 text-center relative">
+          <!-- Subtle Architectural Arch Line Art -->
+          <svg class="w-40 h-10 mx-auto text-silver-metallic/50 mb-4" viewBox="0 0 180 40" fill="none" stroke="currentColor" stroke-width="0.9">
+            <path d="M10 30 Q90 2 170 30" />
+            <path d="M35 30 Q90 12 145 30" stroke-dasharray="2 3" />
+            <circle cx="90" cy="11" r="2" fill="currentColor" />
+          </svg>
+
+          <p class="text-[10px] sm:text-xs uppercase tracking-[0.32em] text-silver-metallic font-medium mb-2">
+            Together With Their Families
+          </p>
+          <h2 class="font-script text-5xl sm:text-6xl text-navy mb-2">
+            Rachel &amp; Daniel
+          </h2>
+          <p class="font-serif italic text-slateink/80 text-base sm:text-lg mb-8">
+            Request the pleasure of your company at their wedding celebration
+          </p>
+
+          <!-- Oval-Framed Romantic Couple Portrait -->
+          <div class="relative w-56 h-72 sm:w-64 sm:h-80 mx-auto mb-8">
+            <div class="absolute -inset-2.5 rounded-[9999px] border border-navy/20 pointer-events-none"></div>
+            <div class="absolute -inset-1 rounded-[9999px] border border-silver/70 pointer-events-none"></div>
+            <div class="w-full h-full rounded-[9999px] overflow-hidden shadow-md bg-wash">
+              <img
+                src="photo2.jpg"
+                alt="Rachel and Daniel romantic portrait"
+                onerror="this.onerror=null;this.src='https://placehold.co/600x800/EBF2F7/1B2A4A?text=Rachel+%26+Daniel';"
+                class="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
+              />
+            </div>
+          </div>
+
+          <!-- Minimal Circular Audio Player ("Tap to Hear Our Song") -->
+          <div class="flex flex-col items-center justify-center mb-8">
+            <button id="audio-toggle-btn" type="button" aria-label="Tap to hear our song"
+              class="group relative flex items-center space-x-3.5 pl-2 pr-5 py-2 rounded-full bg-wash-light border border-wash-mid hover:border-navy/30 shadow-sm transition-all duration-300">
+              <span class="w-10 h-10 rounded-full bg-navy text-white flex items-center justify-center shadow-sm group-hover:bg-navy-light transition-colors">
+                <svg id="audio-icon-play" class="w-4 h-4 ml-0.5" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8 5.14v14l11-7-11-7z" />
+                </svg>
+                <svg id="audio-icon-pause" class="w-4 h-4 hidden" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+                </svg>
+              </span>
+              <div class="text-left">
+                <span id="audio-label" class="block text-[11px] uppercase tracking-[0.2em] text-navy font-semibold">
+                  Tap to Hear Our Song
+                </span>
+                <span id="audio-sublabel" class="block font-serif italic text-xs text-slateink/70">
+                  Lana Del Rey — Young and Beautiful
+                </span>
+              </div>
+              <div id="audio-eq" class="flex items-end space-x-0.5 h-3.5 pl-1" aria-hidden="true">
+                <span class="w-0.5 h-full bg-navy/70 rounded-full eq-bar eq-bar-1"></span>
+                <span class="w-0.5 h-full bg-navy/70 rounded-full eq-bar eq-bar-2"></span>
+                <span class="w-0.5 h-full bg-navy/70 rounded-full eq-bar eq-bar-3"></span>
+                <span class="w-0.5 h-full bg-navy/70 rounded-full eq-bar eq-bar-4"></span>
+              </div>
+            </button>
+          </div>
+
+          <!-- Intro Editorial Message -->
+          <blockquote class="max-w-lg mx-auto font-serif italic text-slateink text-lg sm:text-xl leading-relaxed px-2">
+            &ldquo;With hearts full of love and joy, we would be truly honored to have you by our side as we begin our forever together. Your presence would make our special day even more meaningful as we celebrate love, happiness, and the beautiful memories yet to come.&rdquo;
+          </blockquote>
+        </div>
+
+        <!-- Wedding Date & Location Deep Navy Double-Bordered Badge -->
+        <div class="px-6 sm:px-10 pb-10">
+          <div class="bg-navy text-white rounded-2xl p-2 shadow-md">
+            <div class="rounded-xl border border-silver/45 px-5 py-7 sm:px-8 sm:py-8 text-center">
+              <p class="text-[10px] uppercase tracking-[0.35em] text-silver mb-3 font-medium">
+                Save The Date
+              </p>
+              <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6">
+                <div>
+                  <p class="font-serif text-2xl sm:text-3xl tracking-wide font-medium text-white">
+                    17 August 2027
+                  </p>
+                  <p class="text-xs uppercase tracking-[0.25em] text-silver mt-1">
+                    At 2:00 PM
+                  </p>
+                </div>
+                <div class="hidden sm:block w-[1px] h-12 bg-silver/30"></div>
+                <div class="sm:hidden w-16 h-[1px] bg-silver/30 my-1"></div>
+                <div>
+                  <p class="font-serif text-xl sm:text-2xl tracking-wide text-white">
+                    Franklin Ave
+                  </p>
+                  <p class="text-xs uppercase tracking-[0.22em] text-silver mt-1">
+                    Franklin Square, NY
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- COUNTDOWN SECTION                                                 -->
+      <!-- ================================================================= -->
+      <section aria-label="Wedding Countdown" class="reveal bg-navy text-white rounded-3xl p-2 shadow-editorial">
+        <div class="rounded-2xl border border-silver/35 px-5 py-9 sm:px-10 sm:py-11 text-center">
+          <p class="text-[10px] sm:text-xs uppercase tracking-[0.35em] text-silver font-medium mb-2">
+            Until We Say I Do
+          </p>
+          <h3 class="font-serif text-2xl sm:text-3xl tracking-[0.18em] uppercase font-medium text-white mb-8">
+            The Countdown Is On
+          </h3>
+
+          <div class="grid grid-cols-4 gap-2 sm:gap-5 max-w-lg mx-auto">
+            <div class="bg-navy-deep/70 border border-silver/25 rounded-2xl py-4 px-2">
+              <span id="cd-days" class="block font-serif text-3xl sm:text-5xl font-medium tracking-wider text-white">324</span>
+              <span class="block text-[9px] sm:text-[10px] uppercase tracking-[0.24em] text-silver mt-1.5">Days</span>
+            </div>
+            <div class="bg-navy-deep/70 border border-silver/25 rounded-2xl py-4 px-2">
+              <span id="cd-hours" class="block font-serif text-3xl sm:text-5xl font-medium tracking-wider text-white">04</span>
+              <span class="block text-[9px] sm:text-[10px] uppercase tracking-[0.24em] text-silver mt-1.5">Hours</span>
+            </div>
+            <div class="bg-navy-deep/70 border border-silver/25 rounded-2xl py-4 px-2">
+              <span id="cd-minutes" class="block font-serif text-3xl sm:text-5xl font-medium tracking-wider text-white">28</span>
+              <span class="block text-[9px] sm:text-[10px] uppercase tracking-[0.24em] text-silver mt-1.5">Minutes</span>
+            </div>
+            <div class="bg-navy-deep/70 border border-silver/25 rounded-2xl py-4 px-2">
+              <span id="cd-seconds" class="block font-serif text-3xl sm:text-5xl font-medium tracking-wider text-white">21</span>
+              <span class="block text-[9px] sm:text-[10px] uppercase tracking-[0.24em] text-silver mt-1.5">Seconds</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- C. INTERACTIVE RSVP & DETAILS NAVIGATION STAMP                    -->
+      <!-- ================================================================= -->
+      <section class="reveal grid grid-cols-1 sm:grid-cols-12 gap-6 items-center">
+        <div class="sm:col-span-8 bg-navy text-white rounded-3xl p-7 sm:p-9 shadow-editorial border border-navy-light relative overflow-hidden">
+          <div class="relative z-10">
+            <p class="text-[10px] uppercase tracking-[0.32em] text-silver font-medium mb-2">
+              Your Presence Is Our Greatest Gift
+            </p>
+            <h3 class="font-serif text-2xl sm:text-3xl tracking-wider uppercase font-medium mb-3">
+              Kindly RSVP Here
+            </h3>
+            <p class="text-xs sm:text-sm text-silver-light/85 leading-relaxed mb-6 font-light">
+              Please respond by July 1, 2027 so we may reserve your place at our table and accommodate any dietary preferences.
+            </p>
+            <button type="button" data-open-rsvp
+              class="inline-flex items-center px-7 py-3 rounded-full bg-white text-navy text-xs font-semibold uppercase tracking-[0.24em] hover:bg-wash transition-all duration-300 shadow-sm">
+              <span>RSVP Now</span>
+              <svg class="w-3.5 h-3.5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="sm:col-span-4 flex justify-center">
+          <a href="#schedule" aria-label="Jump to The Details"
+            class="group relative w-40 h-40 rounded-full bg-white border border-wash-mid shadow-editorial flex items-center justify-center p-2 transition-transform duration-500 hover:scale-105">
+            <svg class="w-full h-full spin-slow text-navy" viewBox="0 0 140 140">
+              <defs>
+                <path id="detailsCirclePath" d="M 70, 70 m -52, 0 a 52,52 0 1,1 104,0 a 52,52 0 1,1 -104,0" />
+              </defs>
+              <circle cx="70" cy="70" r="64" fill="none" stroke="#DCE6F0" stroke-width="1" stroke-dasharray="3 3" />
+              <circle cx="70" cy="70" r="40" fill="none" stroke="#B8C4D4" stroke-width="0.75" />
+              <text fill="#1B2A4A" font-size="8.2" font-weight="600" letter-spacing="3.1px" font-family="Montserrat, sans-serif">
+                <textPath href="#detailsCirclePath" startOffset="0%">
+                  THE DETAILS • AUGUST 17, 2027 •
+                </textPath>
+              </text>
+            </svg>
+            <div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+              <span class="font-serif italic text-lg text-navy font-medium leading-none">The Details</span>
+              <svg class="w-4 h-4 text-silver-metallic mt-1.5 transition-transform duration-300 group-hover:translate-y-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+              </svg>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- D. OUR LOVE STORY                                                 -->
+      <!-- ================================================================= -->
+      <section id="love-story" class="reveal bg-white rounded-3xl shadow-editorial border border-wash-mid p-6 sm:p-10 text-center">
+        <p class="text-[10px] uppercase tracking-[0.32em] text-silver-metallic font-medium mb-2">
+          A Decade In The Making
+        </p>
+        <h3 class="font-script text-4xl sm:text-5xl text-navy mb-6">
+          Our Love Story
+        </h3>
+
+        <div class="max-w-md mx-auto p-3 rounded-2xl bg-wash-light border border-wash-mid mb-7">
+          <div class="rounded-xl overflow-hidden aspect-[4/3] bg-wash">
+            <img
+              src="photo4.jpg"
+              alt="Rachel and Daniel walking hand in hand"
+              onerror="this.onerror=null;this.src='https://placehold.co/800x600/EBF2F7/1B2A4A?text=Our+Love+Story';"
+              class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+            />
+          </div>
+          <p class="font-serif italic text-sm text-slateink/75 mt-3">
+            Autumn in Hudson Valley — Where forever quietly began
+          </p>
+        </div>
+
+        <p class="max-w-md mx-auto text-xs sm:text-sm text-slateink/85 leading-relaxed mb-7 font-light">
+          From a chance conversation over morning coffee in Manhattan to a candlelit proposal overlooking the coast, every chapter has led us to this day.
+        </p>
+
+        <button id="open-story-btn" type="button"
+          class="inline-flex items-center px-7 py-3.5 rounded-full border border-navy text-navy text-xs font-semibold uppercase tracking-[0.22em] hover:bg-navy hover:text-white transition-all duration-300">
+          <span>Click for Our Love Story</span>
+          <svg class="w-3.5 h-3.5 ml-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+          </svg>
+        </button>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- E. CEREMONY & WEEKEND SCHEDULE ("CEREMONY OF LOVE")               -->
+      <!-- ================================================================= -->
+      <section id="schedule" class="reveal bg-white rounded-3xl shadow-editorial border border-wash-mid p-6 sm:p-10">
+        <div class="text-center max-w-lg mx-auto mb-10">
+          <p class="text-[10px] uppercase tracking-[0.32em] text-silver-metallic font-medium mb-2">
+            The Celebration
+          </p>
+          <h3 class="font-script text-4xl sm:text-5xl text-navy mb-5">
+            Ceremony of Love
+          </h3>
+          <div class="space-y-4 font-serif text-lg sm:text-xl text-slateink leading-relaxed">
+            <p>
+              We can&rsquo;t wait to celebrate our special day with you! Here&rsquo;s everything you need to know to make the most of the weekend.
+            </p>
+            <p class="italic text-navy">
+              Our ceremony will begin at 3:00 PM in the glasshouse of Tantalus Estate. Please arrive at 2:30 PM to settle in.
+            </p>
+            <p>
+              After we say &lsquo;I do,&rsquo; we&rsquo;ll celebrate with drinks &amp; canap&eacute;s in the gardens at cocktail hour, before moving inside for dinner, speeches, and dancing the night away!
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center space-x-4 my-8">
+          <span class="h-[1px] w-14 bg-wash-mid"></span>
+          <span class="text-[11px] uppercase tracking-[0.28em] text-navy font-semibold">Our Day at a Glance</span>
+          <span class="h-[1px] w-14 bg-wash-mid"></span>
+        </div>
+
+        <div class="relative pt-2">
+          <div class="hidden sm:block absolute top-[34px] left-10 right-10 h-[1px] bg-wash-mid z-0"></div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-5 gap-6 sm:gap-2 relative z-10">
+            <div class="flex sm:flex-col items-center sm:text-center bg-wash-light/60 sm:bg-transparent p-3.5 sm:p-0 rounded-2xl border border-wash-mid/60 sm:border-0">
+              <div class="w-12 h-12 rounded-full bg-white border border-navy/25 shadow-sm flex items-center justify-center text-navy shrink-0 sm:mb-3">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+                  <circle cx="9.5" cy="13" r="4.5" />
+                  <circle cx="14.5" cy="13" r="4.5" />
+                  <path d="M12 6l1.5 2h-3L12 6z" />
+                </svg>
+              </div>
+              <div class="ml-4 sm:ml-0">
+                <p class="text-[11px] font-semibold uppercase tracking-[0.16em] text-navy">3:00 PM</p>
+                <p class="font-serif italic text-base text-slateink mt-0.5">Ceremony</p>
+              </div>
+            </div>
+
+            <div class="flex sm:flex-col items-center sm:text-center bg-wash-light/60 sm:bg-transparent p-3.5 sm:p-0 rounded-2xl border border-wash-mid/60 sm:border-0">
+              <div class="w-12 h-12 rounded-full bg-white border border-navy/25 shadow-sm flex items-center justify-center text-navy shrink-0 sm:mb-3">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+                  <path d="M7 4h10l-1 5a4 4 0 01-8 0L7 4z" />
+                  <path d="M12 13v7M8 20h8" />
+                </svg>
+              </div>
+              <div class="ml-4 sm:ml-0">
+                <p class="text-[11px] font-semibold uppercase tracking-[0.16em] text-navy">4:30 PM</p>
+                <p class="font-serif italic text-base text-slateink mt-0.5">Cocktail Hour</p>
+              </div>
+            </div>
+
+            <div class="flex sm:flex-col items-center sm:text-center bg-wash-light/60 sm:bg-transparent p-3.5 sm:p-0 rounded-2xl border border-wash-mid/60 sm:border-0">
+              <div class="w-12 h-12 rounded-full bg-white border border-navy/25 shadow-sm flex items-center justify-center text-navy shrink-0 sm:mb-3">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+                  <path d="M4 16h16a8 8 0 00-16 0z" />
+                  <path d="M2 18h20M12 6v2" />
+                </svg>
+              </div>
+              <div class="ml-4 sm:ml-0">
+                <p class="text-[11px] font-semibold uppercase tracking-[0.16em] text-navy">7:00 PM</p>
+                <p class="font-serif italic text-base text-slateink mt-0.5">Dinner</p>
+              </div>
+            </div>
+
+            <div class="flex sm:flex-col items-center sm:text-center bg-wash-light/60 sm:bg-transparent p-3.5 sm:p-0 rounded-2xl border border-wash-mid/60 sm:border-0">
+              <div class="w-12 h-12 rounded-full bg-white border border-navy/25 shadow-sm flex items-center justify-center text-navy shrink-0 sm:mb-3">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+                  <path d="M12 3a3 3 0 00-3 3v5a3 3 0 006 0V6a3 3 0 00-3-3z" />
+                  <path d="M19 10v1a7 7 0 01-14 0v-1M12 18v3M8 21h8" />
+                </svg>
+              </div>
+              <div class="ml-4 sm:ml-0">
+                <p class="text-[11px] font-semibold uppercase tracking-[0.16em] text-navy">9:00 PM</p>
+                <p class="font-serif italic text-base text-slateink mt-0.5">Speeches</p>
+              </div>
+            </div>
+
+            <div class="flex sm:flex-col items-center sm:text-center bg-wash-light/60 sm:bg-transparent p-3.5 sm:p-0 rounded-2xl border border-wash-mid/60 sm:border-0">
+              <div class="w-12 h-12 rounded-full bg-white border border-navy/25 shadow-sm flex items-center justify-center text-navy shrink-0 sm:mb-3">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+                  <path d="M9 18V6l10-2v12" />
+                  <circle cx="6.5" cy="18" r="2.5" />
+                  <circle cx="16.5" cy="16" r="2.5" />
+                </svg>
+              </div>
+              <div class="ml-4 sm:ml-0">
+                <p class="text-[11px] font-semibold uppercase tracking-[0.16em] text-navy">10:30 PM</p>
+                <p class="font-serif italic text-base text-slateink mt-0.5">Dancing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- F. VENUE & TRAVEL DETAILS                                         -->
+      <!-- ================================================================= -->
+      <section id="venue" class="reveal bg-white rounded-3xl shadow-editorial border border-wash-mid p-6 sm:p-10 text-center">
+        <p class="text-[10px] uppercase tracking-[0.32em] text-silver-metallic font-medium mb-2">
+          Getting There
+        </p>
+        <h3 class="font-script text-4xl sm:text-5xl text-navy mb-3">
+          The Venue
+        </h3>
+        
+        <!-- Venue Photo Card (photo5.jpg) -->
+        <div class="max-w-md mx-auto p-3 rounded-2xl bg-wash-light border border-wash-mid mb-6">
+          <div class="rounded-xl overflow-hidden aspect-[16/9] bg-wash">
+            <img src="photo5.jpg" alt="Tantalus Estate Venue" 
+                 onerror="this.onerror=null;this.src='https://placehold.co/800x450/EBF2F7/1B2A4A?text=Tantalus+Estate+Venue';"
+                 class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+          </div>
+        </div>
+
+        <p class="font-serif text-xl text-slateink font-medium">
+          Tantalus Estate Glasshouse &amp; Gardens
+        </p>
+        <p class="text-xs uppercase tracking-[0.22em] text-silver-metallic mt-1 mb-6">
+          Franklin Ave, Franklin Square, NY 11010
+        </p>
+        <p class="max-w-md mx-auto text-xs sm:text-sm text-slateink/80 leading-relaxed mb-7 font-light">
+          Complimentary valet parking is available at the main estate entrance beginning at 2:15 PM. Formal garden attire is kindly requested.
+        </p>
+        <a href="https://maps.google.com/?q=Franklin+Ave,+Franklin+Square,+NY" target="_blank" rel="noopener noreferrer"
+          class="inline-flex items-center px-7 py-3 rounded-full border border-navy text-navy text-xs font-semibold uppercase tracking-[0.22em] hover:bg-navy hover:text-white transition-all duration-300">
+          <span>View Location Map</span>
+          <svg class="w-3.5 h-3.5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg>
+        </a>
+      </section>
+
+      <!-- ================================================================= -->
+      <!-- G. EDITORIAL PHOTO GALLERY                                        -->
+      <!-- ================================================================= -->
+      <section id="gallery" class="reveal bg-white rounded-3xl shadow-editorial border border-wash-mid p-6 sm:p-10">
+        <div class="text-center mb-8">
+          <p class="text-[10px] uppercase tracking-[0.32em] text-silver-metallic font-medium mb-2">
+            Captured Moments
+          </p>
+          <h3 class="font-script text-4xl sm:text-5xl text-navy">
+            Engagement Portraits
+          </h3>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3 sm:gap-4">
+          <div class="rounded-2xl overflow-hidden aspect-[3/4] bg-wash">
+            <img src="photo2.jpg"
+              alt="Couple portrait by the coast"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+          </div>
+          <div class="rounded-2xl overflow-hidden aspect-[3/4] bg-wash">
+            <img src="photo3.jpg"
+              alt="Romantic garden embrace"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Editorial Footer -->
+      <footer class="text-center pt-4 pb-8">
+        <p class="font-script text-3xl text-navy mb-1">Rachel &amp; Daniel</p>
+        <p class="text-[10px] uppercase tracking-[0.3em] text-silver-metallic">
+          August 17, 2027 • Franklin Square, New York
+        </p>
+      </footer>
+
+    </div>
+  </main>
+
+  <!-- ===================================================================== -->
+  <!-- INTERACTIVE RSVP MODAL                                                -->
+  <!-- ===================================================================== -->
+  <div id="rsvp-modal" aria-hidden="true" class="fixed inset-0 z-50 hidden items-center justify-center bg-navy-deep/70 backdrop-blur-sm px-4">
+    <div class="relative w-full max-w-md bg-white rounded-3xl shadow-2xl border border-wash-mid p-7 sm:p-9">
+      <button type="button" data-close-rsvp aria-label="Close RSVP modal"
+        class="absolute top-5 right-5 w-8 h-8 rounded-full bg-wash-light text-slateink hover:bg-navy hover:text-white flex items-center justify-center transition-colors">
+        &times;
+      </button>
+
+      <div id="rsvp-form-container">
+        <p class="text-[10px] uppercase tracking-[0.3em] text-silver-metallic text-center mb-1">Kindly Respond</p>
+        <h3 class="font-script text-4xl text-navy text-center mb-6">Be Our Guest</h3>
+
+        <form id="rsvp-form" class="space-y-4">
+          <div>
+            <label class="block text-[10px] uppercase tracking-[0.2em] text-navy font-semibold mb-1.5">Full Name</label>
+            <input type="text" required placeholder="e.g. Eleanor Vance"
+              class="w-full px-4 py-2.5 rounded-xl bg-wash-light border border-wash-mid text-sm focus:outline-none focus:border-navy" />
+          </div>
+
+          <div>
+            <label class="block text-[10px] uppercase tracking-[0.2em] text-navy font-semibold mb-1.5">Will You Attend?</label>
+            <select required class="w-full px-4 py-2.5 rounded-xl bg-wash-light border border-wash-mid text-sm focus:outline-none focus:border-navy">
+              <option value="yes">Joyfully Accepts</option>
+              <option value="no">Regretfully Declines</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-[10px] uppercase tracking-[0.2em] text-navy font-semibold mb-1.5">Number of Guests</label>
+            <select class="w-full px-4 py-2.5 rounded-xl bg-wash-light border border-wash-mid text-sm focus:outline-none focus:border-navy">
+              <option value="1">1 Guest</option>
+              <option value="2">2 Guests</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-[10px] uppercase tracking-[0.2em] text-navy font-semibold mb-1.5">Dietary Notes or Song Request</label>
+            <textarea rows="2" placeholder="Any allergies or a song that will bring you to the dance floor..."
+              class="w-full px-4 py-2.5 rounded-xl bg-wash-light border border-wash-mid text-sm focus:outline-none focus:border-navy"></textarea>
+          </div>
+
+          <button type="submit"
+            class="w-full py-3.5 rounded-full bg-navy text-white text-xs font-semibold uppercase tracking-[0.25em] hover:bg-navy-light transition-colors shadow-md">
+            Send RSVP
+          </button>
+        </form>
+      </div>
+
+      <div id="rsvp-success" class="hidden text-center py-6">
+        <p class="font-script text-4xl text-navy mb-2">Thank You</p>
+        <p class="font-serif italic text-lg text-slateink mb-6">
+          Your response has been recorded. We cannot wait to celebrate with you!
+        </p>
+        <button type="button" data-close-rsvp
+          class="px-7 py-2.5 rounded-full bg-navy text-white text-xs uppercase tracking-[0.22em]">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- LOVE STORY MODAL                                                      -->
+  <!-- ===================================================================== -->
+  <div id="story-modal" aria-hidden="true" class="fixed inset-0 z-50 hidden items-center justify-center bg-navy-deep/70 backdrop-blur-sm px-4">
+    <div class="relative w-full max-w-lg bg-white rounded-3xl shadow-2xl border border-wash-mid p-7 sm:p-10 max-h-[85vh] overflow-y-auto">
+      <button type="button" id="close-story-btn" aria-label="Close Love Story modal"
+        class="absolute top-5 right-5 w-8 h-8 rounded-full bg-wash-light text-slateink hover:bg-navy hover:text-white flex items-center justify-center transition-colors">
+        &times;
+      </button>
+
+      <p class="text-[10px] uppercase tracking-[0.3em] text-silver-metallic text-center mb-1">2018 — 2027</p>
+      <h3 class="font-script text-4xl sm:text-5xl text-navy text-center mb-6">Our Story</h3>
+
+      <div class="space-y-5 font-serif text-lg text-slateink leading-relaxed">
+        <div>
+          <p class="text-xs font-sans uppercase tracking-[0.22em] text-navy font-semibold mb-1">Autumn 2018 • First Hello</p>
+          <p>We met on a rainy October morning in a quiet neighborhood café, reaching for the very last almond croissant and deciding to split it over two hours of effortless conversation.</p>
+        </div>
+        <div>
+          <p class="text-xs font-sans uppercase tracking-[0.22em] text-navy font-semibold mb-1">Summer 2022 • First Home</p>
+          <p>Four years of weekend road trips, Sunday pancakes, and late-night vinyl records led us to our first sunlit apartment together.</p>
+        </div>
+        <div>
+          <p class="text-xs font-sans uppercase tracking-[0.22em] text-navy font-semibold mb-1">September 2025 • The Proposal</p>
+          <p>Under a canopy of lanterns overlooking the Hudson River at dusk, Daniel asked the easiest question Rachel has ever answered.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- INTERACTIVE SCRIPTS                                                   -->
+  <!-- ===================================================================== -->
+  <script>
+    // 1. Envelope Opening Interaction
+    const envelopeOverlay = document.getElementById('envelope-overlay');
+    const envelopeTrigger = document.getElementById('envelope-trigger');
+    const openInvitationBtn = document.getElementById('open-invitation-btn');
+
+    function openEnvelope() {
+      if (envelopeOverlay.classList.contains('opening')) return;
+      envelopeOverlay.classList.add('opening');
+      setTimeout(() => {
+        envelopeOverlay.classList.add('opened');
+      }, 720);
+    }
+
+    envelopeTrigger.addEventListener('click', openEnvelope);
+    envelopeTrigger.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        openEnvelope();
+      }
+    });
+    openInvitationBtn.addEventListener('click', openEnvelope);
+
+    // 2. Scroll Reveal Observer
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealEls.forEach((el) => revealObserver.observe(el));
+
+    // 3. Live Wedding Countdown (August 17, 2027 at 15:00:00)
+    const weddingDate = new Date('2027-08-17T15:00:00').getTime();
+    function updateCountdown() {
+      const now = Date.now();
+      const diff = Math.max(0, weddingDate - now);
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / 1000 / 60) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+
+      document.getElementById('cd-days').textContent = String(days).padStart(2, '0');
+      document.getElementById('cd-hours').textContent = String(hours).padStart(2, '0');
+      document.getElementById('cd-minutes').textContent = String(minutes).padStart(2, '0');
+      document.getElementById('cd-seconds').textContent = String(seconds).padStart(2, '0');
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // 4. MP3 Audio Player ("young-and-beautiful.mp3")
+    const weddingSong = document.getElementById('wedding-song');
+    const audioBtn = document.getElementById('audio-toggle-btn');
+    const playIcon = document.getElementById('audio-icon-play');
+    const pauseIcon = document.getElementById('audio-icon-pause');
+    const audioLabel = document.getElementById('audio-label');
+    const audioEq = document.getElementById('audio-eq');
+
+    function setPlayingUI(playing) {
+      if (playing) {
+        playIcon.classList.add('hidden');
+        pauseIcon.classList.remove('hidden');
+        audioLabel.textContent = 'Now Playing';
+        audioEq.classList.add('playing');
+      } else {
+        playIcon.classList.remove('hidden');
+        pauseIcon.classList.add('hidden');
+        audioLabel.textContent = 'Tap to Hear Our Song';
+        audioEq.classList.remove('playing');
+      }
+    }
+
+    function toggleSong() {
+      if (weddingSong.paused) {
+        weddingSong.play()
+          .then(() => setPlayingUI(true))
+          .catch(() => setPlayingUI(false));
+      } else {
+        weddingSong.pause();
+        setPlayingUI(false);
+      }
+    }
+
+    weddingSong.addEventListener('ended', () => setPlayingUI(false));
+    audioBtn.addEventListener('click', toggleSong);
+
+    // 5. RSVP & Love Story Modals
+    const rsvpModal = document.getElementById('rsvp-modal');
+    const rsvpForm = document.getElementById('rsvp-form');
+    const rsvpFormContainer = document.getElementById('rsvp-form-container');
+    const rsvpSuccess = document.getElementById('rsvp-success');
+
+    document.querySelectorAll('[data-open-rsvp]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        rsvpModal.classList.remove('hidden');
+        rsvpModal.classList.add('flex');
+      });
+    });
+
+    document.querySelectorAll('[data-close-rsvp]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        rsvpModal.classList.add('hidden');
+        rsvpModal.classList.remove('flex');
+      });
+    });
+
+    rsvpForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      rsvpFormContainer.classList.add('hidden');
+      rsvpSuccess.classList.remove('hidden');
+    });
+
+    const storyModal = document.getElementById('story-modal');
+    document.getElementById('open-story-btn').addEventListener('click', () => {
+      storyModal.classList.remove('hidden');
+      storyModal.classList.add('flex');
+    });
+    document.getElementById('close-story-btn').addEventListener('click', () => {
+      storyModal.classList.add('hidden');
+      storyModal.classList.remove('flex');
+    });
+  </script>
+</body>
+</html>
